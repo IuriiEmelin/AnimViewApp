@@ -30,13 +30,19 @@
                                 <rect key="frame" x="50" y="713.66666666666663" width="293" height="30"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Run">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeAnimButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCf-5j-LEr"/>
+                                    <action selector="changeAnimButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ii-zh-gc2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation present" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VV-0J-ilF">
+                                <rect key="frame" x="110" y="413" width="173" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,13 +51,17 @@
                             <constraint firstItem="5ao-SM-bCQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B74-GF-rgd"/>
                             <constraint firstItem="Ccj-bd-rfY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FYB-ny-Qa5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ccj-bd-rfY" secondAttribute="trailing" constant="50" id="FzX-F3-e2Q"/>
+                            <constraint firstItem="4VV-0J-ilF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MGZ-2E-8Pq"/>
+                            <constraint firstItem="4VV-0J-ilF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QbE-b5-Fvd"/>
                             <constraint firstItem="5ao-SM-bCQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="aEf-qq-Pvg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5ao-SM-bCQ" secondAttribute="bottom" multiplier="1.1" id="d7F-P2-4Un"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ao-SM-bCQ" secondAttribute="trailing" constant="50" id="unt-l2-utH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationLabel" destination="4VV-0J-ilF" id="W1S-pN-Nbs"/>
                         <outlet property="animationView" destination="Ccj-bd-rfY" id="aef-Sf-4XK"/>
+                        <outlet property="changeButton" destination="5ao-SM-bCQ" id="d82-dr-vVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
